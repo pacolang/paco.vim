@@ -13,7 +13,7 @@ syntax keyword pacoTypes
       \ string
 
 syntax match pacoVariable "\v\*\w+"
-syntax match pacoFunctionCall "\v<(\w+\|)?\w+\(.+\)>"
+syntax match pacoFunctionCall "\v<\w+\|\w+>"
 
 syntax match pacoNumber "\v<([-+])?\d+(\.\d+)?>"
 syntax region pacoString start=/"/ skip=/\\"/ end=/"/ oneline
