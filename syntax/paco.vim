@@ -13,7 +13,7 @@ syntax keyword pacoTypes
       \ string
 
 syntax match pacoVariable "\v\*\w+"
-syntax match pacoFunctionCall "\v<\w+\|\w+>"
+syntax match pacoFunctionCall "\v<(\w+)?\|\w+>"
 
 syntax match pacoNumber "\v<([-+])?\d+(\.\d+)?>"
 syntax region pacoString start=/"/ skip=/\\"/ end=/"/ oneline
@@ -33,6 +33,8 @@ syntax match pacoOperator "\v\*"
 syntax match pacoParentheses "\v\("
 syntax match pacoParentheses "\v\)"
 
+syntax match pacoPipe "\v\|"
+
 highlight default link pacoTodos Todo
 highlight default link pacoString String
 highlight default link pacoNumber Number
@@ -44,3 +46,4 @@ highlight default link pacoTypes Type
 highlight default link pacoVariable Identifier
 highlight default link pacoFunctionCall Type
 highlight default link pacoParentheses Delimiter
+highlight default link pacoPipe Delimiter
