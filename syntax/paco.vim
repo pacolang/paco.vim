@@ -12,9 +12,9 @@ syntax keyword pacoTypes
       \ int
       \ string
 
-syntax match pacoVariable "\v*.+"
+syntax match pacoVariable "\v*\w+"
 
-syntax match pacoFunctionCall "\v<(.+|)?.+(.+)>"
+syntax match pacoFunctionCall "\v<(\w+|)?\w+(>"
 
 syntax match pacoNumber "\v<([-+])?\d+(\.\d+)?>"
 syntax region pacoString start=/"/ skip=/\\"/ end=/"/ oneline
