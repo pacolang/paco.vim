@@ -8,7 +8,14 @@ syntax keyword pacoKeywords
       \ end
       \ and
       \ or
-  
+syntax keyword pacoTypes
+      \ int
+      \ string
+
+syntax match pacoVariable "\v*.+"
+
+syntax match pacoFunctionCall "\v<(.+|)?.+(.+)>"
+
 syntax match pacoNumber "\v<([-+])?\d+(\.\d+)?>"
 syntax region pacoString start=/"/ skip=/\\"/ end=/"/ oneline
 
@@ -31,3 +38,6 @@ highlight default link pacoOperator Operator
 highlight default link pacoKeywords Keyword
 highlight default link pacoBoolean Boolean
 highlight default link pacoComment Comment
+highlight default link pacoTypes Type
+highlight default link pacoVariable Identifier
+highlight default link pacoFunctionCall Type
