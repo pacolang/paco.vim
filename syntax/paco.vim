@@ -12,7 +12,7 @@ syntax keyword pacoTypes
       \ int
       \ string
 
-syntax match pacoVariable "\v*\w+"
+syntax match pacoVariable "\v<\*\w+>"
 
 syntax match pacoFunctionCall "\v<(\w+|)?\w+\(>"
 
