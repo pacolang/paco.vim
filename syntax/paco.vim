@@ -23,13 +23,13 @@ syntax keyword pacoBoolean
       \ true
       \ false
 
-syntax match pacoComment /-.+/
+syntax match pacoComment "\v-.+"
 
-syntax match pacoOperator /\=/
-syntax match pacoOperator /\!/
-syntax match pacoOperator /\</
-syntax match pacoOperator /\>/
-syntax match pacoOperator /\*/
+syntax match pacoOperator "\v\="
+syntax match pacoOperator "\v\!"
+syntax match pacoOperator "\v\<"
+syntax match pacoOperator "\v\>"
+syntax match pacoOperator "\v\*"
 
 highlight default link pacoTodos Todo
 highlight default link pacoString String
