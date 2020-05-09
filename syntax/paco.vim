@@ -12,24 +12,24 @@ syntax keyword pacoTypes
       \ int
       \ string
 
-syntax match pacoVariable "\v<\*\w+>"
+syntax match pacoVariable /\*\w+/
 
-syntax match pacoFunctionCall "\v<(\w+|)?\w+\(>"
+syntax match pacoFunctionCall /(\w+\|)?\w+/
 
-syntax match pacoNumber "\v<([-+])?\d+(\.\d+)?>"
+syntax match pacoNumber /([-+])?\d+(\.\d+)?/
 syntax region pacoString start=/"/ skip=/\\"/ end=/"/ oneline
 
 syntax keyword pacoBoolean
       \ true
       \ false
 
-syntax match pacoComment "\v-.+"
+syntax match pacoComment /-.+/
 
-syntax match pacoOperator "\v\="
-syntax match pacoOperator "\v\!"
-syntax match pacoOperator "\v\<"
-syntax match pacoOperator "\v\>"
-syntax match pacoOperator "\v\*"
+syntax match pacoOperator /\=/
+syntax match pacoOperator /\!/
+syntax match pacoOperator /\</
+syntax match pacoOperator /\>/
+syntax match pacoOperator /\*/
 
 highlight default link pacoTodos Todo
 highlight default link pacoString String
