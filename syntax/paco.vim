@@ -12,11 +12,11 @@ syntax keyword pacoTypes
       \ int
       \ string
 
-syntax match pacoVariable /\*\w+/
+syntax match pacoVariable "\v<\*\w+>"
 
-syntax match pacoFunctionCall /(\w+\|)?\w+/
+syntax match pacoFunctionCall "\v<(\w+\|)?\w+\(>"
 
-syntax match pacoNumber /([-+])?\d+(\.\d+)?/
+syntax match pacoNumber "\v<([-+])?\d+(\.\d+)?>"
 syntax region pacoString start=/"/ skip=/\\"/ end=/"/ oneline
 
 syntax keyword pacoBoolean
