@@ -12,8 +12,7 @@ syntax keyword pacoTypes
       \ int
       \ string
 
-syntax match pacoVariable "\v\*\w+"
-syntax match pacoFunctionCall "\v<(\w+)?\|\w+>"
+syntax match pacoVariable "\*\w+"
 
 syntax match pacoNumber "\v<([-+])?\d+(\.\d+)?>"
 syntax region pacoString start=/"/ skip=/\\"/ end=/"/ oneline
@@ -44,6 +43,5 @@ highlight default link pacoBoolean Boolean
 highlight default link pacoComment Comment
 highlight default link pacoTypes Type
 highlight default link pacoVariable Identifier
-highlight default link pacoFunctionCall Type
 highlight default link pacoParentheses Delimiter
 highlight default link pacoPipe Delimiter
