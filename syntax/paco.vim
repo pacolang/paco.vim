@@ -42,6 +42,6 @@ highlight default link pacoKeywords Keyword
 highlight default link pacoBoolean Boolean
 highlight default link pacoComment Comment
 highlight default link pacoTypes Type
-highlight default link pacoVariable Identifier
+highlight default link pacoVariable Type
 highlight default link pacoParentheses Delimiter
 highlight default link pacoPipe Delimiter
