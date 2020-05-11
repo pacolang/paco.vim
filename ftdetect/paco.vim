@@ -1,3 +1,4 @@
 " ftdetect/paco.vim
 
-autocmd BufNewFile,BufRead *.paco,*.pacomod setfiletype paco
+autocmd BufNewFile,BufRead *.paco setfiletype paco
+autocmd BufNewFile,BufRead *.pacomod setfiletype pacomod
