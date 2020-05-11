@@ -8,6 +8,7 @@ syntax keyword pacoKeywords
       \ end
       \ and
       \ or
+      \ mod
 syntax keyword pacoTypes
       \ int
       \ string
